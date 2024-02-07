@@ -56,6 +56,9 @@ h5,
 h6 {
   font-family: var(--font-primary);
 }
+h36 {
+	font size: 100px;
+}
 
 /*--------------------------------------------------------------
 # Sections & Section Header
@@ -78,11 +81,11 @@ h6 {
 .nah {
 	margin-left: 64%;
 	position: relative;
-	top: -720px;
+	top: -950px;
 }
 .yeah {
 	position: relative;
-	top: -765px;
+	top: -1000px;
 	margin-left: 27%;
 }
 .imstressed {
@@ -1075,11 +1078,20 @@ h12 {
 }
 .when {
 	align-content: right;
-	font-size: 100;
+	font-size: 25px;
+	position: relative;
+	top: 400px;
+	margin-left: 400px;
 }
 .whennow 
-{ margin-left: 80%}
-
+{ margin-left: 70%;
+position: relative;
+	top: 430px;
+}
+.enoughisenough {
+top: 500px;
+width: 300px;
+}
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
