@@ -203,6 +203,35 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+	
+	<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // When the DOM is fully loaded, add an event listener to the form
+  document.querySelector('.php-email-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent the default form submission
+
+    var formData = new FormData(this); // Grab the data from the form where 'this' is the form element
+
+    // Perform the AJAX request
+    fetch('forms/contact.php', { // Change 'forms/contact.php' to your server-side script's URL
+      method: 'POST',
+      body: formData,
+    })
+    .then(response => response.text()) // Convert response to text (you might need JSON depending on your backend)
+    .then(data => {
+      console.log(data); // Log the response data
+      // Here you can handle the response, show a success message, etc.
+      // For example, assuming you have a div with class 'form-result' to show the result:
+      document.querySelector('.form-result').innerHTML = data; // Or any success message
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      // Handle the error, such as showing an error message
+    });
+  });
+});
+</script>
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
