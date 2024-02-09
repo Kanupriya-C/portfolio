@@ -226,6 +226,7 @@ h2 {
   bottom: 15px;
 }
 
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -777,7 +778,7 @@ h12 {
 
 .gallery .gallery-item {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   border-radius: 10px;
 }
 
@@ -938,7 +939,9 @@ h12 {
 .gallery-single .portfolio-info .btn-visit:hover {
   background: #2cbc85;
 }
-
+.col-lg-8{
+	wdith:90%;
+}
 .gallery-single .portfolio-description h2 {
   font-size: 26px;
   font-weight: 700;
@@ -1006,6 +1009,8 @@ h12 {
   margin: 0 0 15px 0 0 0;
   padding: 0;
 }
+
+
 
 /*--------------------------------------------------------------
 # Services Section
